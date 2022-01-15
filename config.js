@@ -18,7 +18,7 @@ export const commands = [
 ]
 
 export const clientID = '927282767828504676';
-export const guildID = '575001822998298642';
-export const roleID = '927288221107384390';
-export const channelID = '816652733226287104';
-export const logChannelID = '827476327014858773';
+export const guildID = '910072572228550696';
+export const roleID = '932038060458250271';
+export const channelID = '926003865789284373';
+export const logChannelID = '910072572606046273';
