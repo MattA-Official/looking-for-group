@@ -1,4 +1,6 @@
-export const token = 'OTI3MjgyNzY3ODI4NTA0Njc2.YdH9Xw.4z-zwkoNHQ5W-OHGFdSx-4NLmEg';
+import 'dotenv/config';
+
+export const token = process.env.TOKEN;
 
 export const commands = [
 	{
