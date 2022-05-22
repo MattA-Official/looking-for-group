@@ -2,8 +2,7 @@ import { Client, Intents } from 'discord.js';
 import { token, roleID, channelID, logChannelID } from './config.js';
 
 const client = new Client({ 
-	intents: [Intents.FLAGS.GUILDS],
-	allowedMentions: { parse: []}
+	intents: [Intents.FLAGS.GUILDS]
 });
 const cooldown = new Map();
 
@@ -59,7 +58,7 @@ client.on('interactionCreate', async (interaction) => {
 			cooldown.set(interaction.member.id, Date.now());
 
 			// mention the role
-			await interaction.reply({ content: `<@&${roleID}> - ${interaction.member} is looking for a team`, allowedMentions: { parse: ['roles'] } });
+			await interaction.reply({ content: `<@&${roleID}> - ${interaction.member} is looking for a team`, allowedMentions: { roles: [roleID] } });
 			break;
 	}
 
